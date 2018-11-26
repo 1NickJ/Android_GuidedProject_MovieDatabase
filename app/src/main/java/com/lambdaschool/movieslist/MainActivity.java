@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         ThemeUtils.onActivityCreateSetTheme(activity);
         setContentView(R.layout.activity_main);
 
-//        parentLayout = findViewById(R.id.parent_layout);
+        parentLayout = findViewById(R.id.parent_layout);
         context = this;
 
         findViewById(R.id.toggle_button).setOnClickListener(new View.OnClickListener() {

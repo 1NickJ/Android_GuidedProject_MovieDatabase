@@ -7,18 +7,18 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
+    <!--<ImageView
         android:src="@drawable/ic_extension_black_24dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" />-->
 
-    <TextView
+    <!--<TextView
         android:text="Title"
         android:textSize="?attr/movie_title_size"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" />-->
 
-    <!--<ScrollView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-    </ScrollView>-->
+    </ScrollView>
 
     <Button
         android:id="@+id/toggle_button"
