@@ -9,13 +9,13 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public final class MovieDbDao {
-    public static final String BASE_URL          = "https://api.themoviedb.org/3";
-    public static final String API_KEY_ENDING    = "?api_key=b98f8f717026d85eb364fe4ac55cd214";
-    public static final String POPULAR_MOVIES    = BASE_URL + "/movie/popular" + API_KEY_ENDING;
-    public static final String GET_MOVIE_WITH_ID = BASE_URL + "/movie/%s" + API_KEY_ENDING;
+    private static final String BASE_URL          = "https://api.themoviedb.org/3";
+    private static final String API_KEY_ENDING    = "?api_key=b98f8f717026d85eb364fe4ac55cd214";
+    private static final String POPULAR_MOVIES    = BASE_URL + "/movie/popular" + API_KEY_ENDING;
+    private static final String GET_MOVIE_WITH_ID = BASE_URL + "/movie/%s" + API_KEY_ENDING;
 
-    public static final String IMAGE_URL = "https://image.tmdb.org/t/p/";
-    public static final String[] POSTER_SIZES = new String[] {
+    private static final String IMAGE_URL = "https://image.tmdb.org/t/p/";
+    private static final String[] POSTER_SIZES = new String[] {
             "w92",
             "w154",
             "w185",
@@ -24,8 +24,8 @@ public final class MovieDbDao {
             "w780",
             "original"};
 
-    public static final String JPG  = ".jpg";
-    public static final String JSON = ".json";
+    private static final String JPG  = ".jpg";
+    private static final String JSON = ".json";
 
     public interface OverviewListCallback {
         public void requestFinished(boolean success, ArrayList<MovieOverview> list);
